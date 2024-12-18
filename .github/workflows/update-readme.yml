@@ -1,0 +1,19 @@
+name: Update README
+on:
+  push:
+    branches: [lulubasheer728-patch-1]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update README
+        run: |
+          current_date=$(date +"%B %d, %Y")
+          sed -i '' "s/Last updated: .*/Last updated: $current_date/" README.md
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: Update Last Updated date
+          files: README.md

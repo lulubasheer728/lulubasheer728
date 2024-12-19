@@ -1,7 +1,7 @@
 name: Update README
 on:
-  push:
-    branches: [lulubasheer728-patch-1]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   update-readme:
@@ -23,6 +23,3 @@ jobs:
             git add README.md
             git commit -m "Update README last updated timestamp" || echo "No changes to commit"
             git push origin HEAD
-
-      - name: List Files
-        run: ls -la

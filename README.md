@@ -54,4 +54,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" height="40" alt="docker logo"  />
 </div>
 
-<p> Last Updated: December 19, 2024
+---
+
+###### Last Updated: December 19, 2024
